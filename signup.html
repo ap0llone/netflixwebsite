@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style/signup.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html"><img src="style/images/logo.png" class="logo"></a>
+        </nav>
+        <div class="row">
+            <div class="col-1">
+                <div class="form-box">
+                    <div class="form">
+                        <form class="login-form">
+                            <center><h1 class="main-heading">Sign In</h1></center>
+                            <input type="text"placeholder="Username"/>
+                            <input type="password"placeholder="Password"/>
+                            <button>LOGIN</button>
+                            <p class="message">Not Registered? <a href="#">Register</a></p>
+                        </form>
+                        <form class="register-form">
+                            <center><h1 class="main-heading">Register Form</h1></center>
+                            <input type="text" placeholder="Username"/>
+                            <input type="text" placeholder="Email-ID"/>
+                            <input type="password" placeholder="Password"/>
+                            <button>REGISTER</button>
+                            <p class="message">Already Registered?<a href="#"> Login</a>
+                            </p>
+                        </form>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src='https://code.jquery.com/jquery-3.2.1.min.js'>
+</script>
+<script>
+    $('.message a').click(function(){$('form').animate({height: "toggle",opacity: "toggle"},"slow");});
+</script>
+    </div>
+</body>
+</html>
